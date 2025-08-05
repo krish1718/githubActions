@@ -1,0 +1,10 @@
+name: One Workflow
+on: workflow_dispatch #Make sure it will manual workflow
+jobs:
+  first-job:
+    runs-on: ubuntu-latest       # Runners are the machines that execute jobs in a GitHub Actions workflow.
+    steps:
+      - name: Print greeting
+        run: echo "Hello World"
+      - name: Print goodbye
+        run: echo "Bye See You soon"
